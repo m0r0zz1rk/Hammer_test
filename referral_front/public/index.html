@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="<%= BASE_URL %>css/main.css" rel="stylesheet" type="text/css">
+    <link href="<%= BASE_URL %>css/notif.css" rel="stylesheet" type="text/css">
+    <title>Hammers Test</title>
+    <script src="<%= BASE_URL %>js/notif.js" type="text/javascript"></script>
+    <script src="<%= BASE_URL %>js/popover.js" type="text/javascript"></script>
+    <script src="<%= BASE_URL %>js/cookie.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <div class="strips">
+        <div id="info-strip" class="strip-hidden">
+          <ui5-message-strip design="Information" hide-close-button>
+            <div id="info-message"></div>
+          </ui5-message-strip>
+        </div>
+        <div id="load-strip"  class="strip-hidden">
+          <ui5-message-strip design="Warning" hide-close-button>
+            <img src="../images/loading.gif" width="16" height="16" slot="icon">
+            Пожалуйста, подождите
+          </ui5-message-strip>
+        </div>
+        <div id="error-strip"  class="strip-hidden">
+          <ui5-message-strip design="Negative" hide-close-button>
+            <div id="error-message"></div>
+          </ui5-message-strip>
+        </div>
+        <div id="success-strip"  class="strip-hidden">
+          <ui5-message-strip design="Positive" hide-close-button>
+            <div id="success-message"></div>
+          </ui5-message-strip>
+        </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

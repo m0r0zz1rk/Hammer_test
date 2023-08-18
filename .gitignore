@@ -1,0 +1,25 @@
+/.idea/
+/venv/
+
+/referral_back/web_app/.env
+
+/referral_front/.DS_Store
+/referral_front/node_modules
+/referral_front/dist
+
+/referral_front/.env.local
+/referral_front/.env.*.local
+
+/referral_front/npm-debug.log*
+/referral_front/yarn-debug.log*
+/referral_front/yarn-error.log*
+/referral_front/pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

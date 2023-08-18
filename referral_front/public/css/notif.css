@@ -1,0 +1,12 @@
+.strips {
+    width: 45vw;
+    margin: 0 auto;
+}
+
+.strip-visible {
+    visibility: visible;
+}
+
+.strip-hidden {
+    visibility: hidden;
+}
